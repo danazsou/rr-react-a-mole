@@ -1,5 +1,5 @@
-import React {useEffect} from "react";
-import moleHill from '../moleHill.png';
+import {useEffect} from "react";
+import moleHillImg from './images/moleHill.png';
 
 const EmptySlot = (props) => {
 
@@ -13,7 +13,7 @@ const EmptySlot = (props) => {
 
     return (
         <div>
-            <img style={{'width': '30vw'}} src={moleHill} />
+            <img style={{'width': '30vw'}} src={moleHillImg} alt = "mole hills that look like bricks"/>
         </div>
     )
 }
