@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import MoleContainer from './MoleContainer'
+import './App.css';
+import { useState } from 'react';
+import MoleContainer from './MoleContainer';
 
 function App(){
     let [score, setScore] = useState(0)
@@ -9,7 +10,7 @@ function App(){
         for (let i = 0; i < 9; i++) {
             hills.push(
                 <MoleContainer
-                key=
+                key={i}
                 setScore={setScore}
                 score={score} />
             )
@@ -31,5 +32,5 @@ function App(){
     )
 }
 
-export default App
+export default App;
 
